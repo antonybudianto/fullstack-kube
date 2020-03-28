@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app-be:
+    build: ./backend
+    image: app-be
+    ports:
+      - 3001:5000
+  app-fe:
+    build: ./frontend
+    image: app-fe
+    ports:
+      - 3000:80
+    depends_on:
+      - app-be
