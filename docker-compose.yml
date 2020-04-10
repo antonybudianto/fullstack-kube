@@ -2,10 +2,10 @@ version: '3'
 services:
   app-be:
     build: ./backend
-    image: app-be
+    image: antonybudianto/app-be
   app-fe:
     build: ./frontend
-    image: app-fe
+    image: antonybudianto/app-fe
     ports:
       - 3000:80
     depends_on:

@@ -2,9 +2,13 @@ FROM node:10.18-alpine AS build
 
 WORKDIR /data/frontend
 
+COPY package.json ./
+
+RUN yarn
+
 COPY . .
 
-RUN yarn && yarn build
+RUN yarn build
 
 FROM nginx
 
