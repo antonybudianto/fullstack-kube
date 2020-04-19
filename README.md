@@ -1,5 +1,12 @@
 # fullstack-kube
 
+Simple Kubernetes production setup for fullstack app.
+
+## Stack
+
+- Frontend (Hello world Create React App)
+- Backend (Hello world KoaJS)
+
 ## Getting started
 
 1. Build and push image, make sure you've **changed** the image username to yours.
