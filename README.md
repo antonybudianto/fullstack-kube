@@ -2,15 +2,27 @@
 
 ## Getting started
 
-1. Apply kubernetes config
+1. Build and push image, make sure you've **changed** the image username to yours.
 
-```
-kubectl apply -f kube/app.yml
-```
+   ```
+   docker-compose build
+   ```
 
-2. Open http://localhost for Frontend
+   ```
+   docker-compose push
+   ```
 
-3. Open http://localhost/api/ping for Backend
+   > You don't have to use docker-compose to build images, it's just for convenience.
+
+2. Apply kubernetes config
+
+   ```
+   kubectl apply -f kube/app.yml
+   ```
+
+3. Open http://localhost for Frontend
+
+4. Open http://localhost/api/ping for Backend
 
 ## License
 
