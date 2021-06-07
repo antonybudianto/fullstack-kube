@@ -75,6 +75,10 @@ kubectl exec --stdin --tty app-fe-5b77f6c8c8-lfsvx -- /bin/sh
 kubectl delete service,deployment app-fe app-be
 ```
 
+## Reference
+
+- https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
 ## License
 
 MIT
