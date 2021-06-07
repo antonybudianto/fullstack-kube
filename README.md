@@ -57,6 +57,12 @@ kubectl get deployment
 kubectl get service
 ```
 
+### Check logs
+
+```
+kubectl logs -f -l app=app-be
+```
+
 ### Delete
 
 ```
