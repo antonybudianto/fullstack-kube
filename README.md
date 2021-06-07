@@ -63,6 +63,12 @@ kubectl get service
 kubectl logs -f -l app=app-be
 ```
 
+### SSH to Pod
+
+```
+kubectl exec --stdin --tty app-fe-5b77f6c8c8-lfsvx -- /bin/sh
+```
+
 ### Delete
 
 ```
