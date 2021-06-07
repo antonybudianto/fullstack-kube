@@ -31,6 +31,38 @@ Simple Kubernetes production setup for fullstack app.
 
 4. Open http://localhost/api/ping for Backend
 
+## Kube commands
+
+### Apply kube
+
+```
+kubectl apply -f kube/app.yaml
+```
+
+### Check pods
+
+```
+kubectl get pods -l app=app-fe
+```
+
+### Check deployment
+
+```
+kubectl get deployment
+```
+
+### Check service
+
+```
+kubectl get service
+```
+
+### Delete
+
+```
+kubectl delete service,deployment app-fe app-be
+```
+
 ## License
 
 MIT

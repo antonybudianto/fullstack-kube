@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const os = require('os');
 const Koa = require('koa');
 const Router = require('koa-router');
 const bodyParser = require('koa-bodyparser');
@@ -10,9 +11,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser());
 
-router.get('/api/ping', ctx => {
+router.get('/api/ping', (ctx) => {
   ctx.body = {
-    message: 'ok',
+    message: `ok from ${os.hostname()}`,
   };
 });
 
