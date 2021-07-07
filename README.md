@@ -36,7 +36,7 @@ Simple Kubernetes production setup for fullstack app.
 ### Apply kube
 
 ```
-kubectl apply -f kube/app.yaml
+kubectl apply -f kube/app.yml
 ```
 
 ### Check pods
