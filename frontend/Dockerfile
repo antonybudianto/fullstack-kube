@@ -2,7 +2,7 @@ FROM node:10.18-alpine AS build
 
 WORKDIR /data/frontend
 
-COPY package.json ./
+COPY package.json yarn.lock ./
 
 RUN yarn
 

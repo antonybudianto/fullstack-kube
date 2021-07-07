@@ -7,6 +7,20 @@ Simple Kubernetes production setup for fullstack app.
 - Frontend (Hello world Create React App)
 - Backend (Hello world KoaJS)
 
+## Local Registry
+
+Run local registry so you won't get pull limit from Docker.
+
+```
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```
+
+Add insecure registry on file `~/.docker/daemon.json` and restart Docker
+
+```
+{"debug":true,"experimental":false,"insecure-registries":["127.0.0.1:5000", ...
+```
+
 ## Getting started
 
 1. Build and push image, make sure you've **changed** the image username to yours.
